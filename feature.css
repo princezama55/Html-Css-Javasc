@@ -1,0 +1,346 @@
+                        body {
+                            background-color: #ebe9e9;
+                        }
+                        
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                            list-style: none;
+                            text-decoration: none;
+                            transition: 0.5s;
+                            font-family: sans-serif;
+                        }
+                        
+                        .wrapper {
+                            max-width: 1100px;
+                            margin: auto;
+                            padding: 0 20px;
+                        }
+                        
+                        p {
+                            color: var(--gray);
+                            font-size: 15px;
+                        }
+                        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        
+                        i {
+                            cursor: pointer;
+                        }
+                        /* --TOP WEB */
+                        
+                        .topweb {
+                            background-color: black;
+                            padding: 7px;
+                        }
+                        
+                        .topweb .wrapper {
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: 13px;
+                            text-transform: capitalize;
+                        }
+                        
+                        .topweb .wrapper .top-web-left a {
+                            color: white;
+                            margin-left: 12px;
+                        }
+                        
+                        .topweb .wrapper .top-web-right a i {
+                            color: white;
+                            margin-left: 12px;
+                        }
+                        /*----------- NAVIGATION BAR-------------- */
+                        
+                        header {
+                            background-color: white;
+                            padding: 15px;
+                            width: 100%;
+                        }
+                        
+                        #bars,
+                        #times {
+                            display: none;
+                        }
+                        
+                        header .wrapper {
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                        }
+                        
+                        header .wrapper .logo {
+                            font-size: 25px;
+                            color: black;
+                            font-weight: 800;
+                        }
+                        
+                        header .wrapper .logo i {
+                            color: orangered;
+                        }
+                        
+                        header .wrapper .navbar {
+                            display: inline-flex;
+                        }
+                        
+                        header .wrapper .navbar li a {
+                            font-size: 14px;
+                            color: black;
+                            font-weight: 600;
+                            margin-left: 25px;
+                            text-transform: uppercase;
+                        }
+                        
+                        .logo-991 {
+                            display: none;
+                        }
+                        
+                        header .wrapper .navbar li a:hover,
+                        .topweb .wrapper a:hover,
+                        .topweb .wrapper a i:hover {
+                            color: orangered;
+                            transition: all 0.1s;
+                        }
+                        
+                        header .search {
+                            position: absolute;
+                            right: 0;
+                            background-color: #eeecec;
+                            padding: 8px;
+                            border-radius: 5px;
+                        }
+                        
+                        header .search i:hover {
+                            color: orangered;
+                        }
+                        /* STICK NAVBAR */
+                        
+                        header.sticky {
+                            position: fixed;
+                            z-index: 1000;
+                            top: 0;
+                            left: 0;
+                            transition: 0.5s;
+                            box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+                        }
+                        /* GRID CONTAINER */
+                        
+                        .grid-container {
+                            display: grid;
+                            grid-template-columns: 1fr 4fr;
+                            gap: 20px;
+                            margin-top: 20px;
+                        }
+                        
+                        .super-grid-right {
+                            background-color: rgb(255, 255, 255);
+                            padding: 20px;
+                        }
+                        
+                        .grid-nav {
+                            padding: 20px;
+                            background-color: white;
+                            margin-bottom: 20px;
+                        }
+                        /* Grid nav select max-width 480px */
+                        
+                        .grid-nav-3 {
+                            background-color: white;
+                            padding: 20px;
+                            display: none;
+                        }
+                        
+                        .grid-select {
+                            background-color: whitesmoke;
+                            position: relative;
+                        }
+                        
+                        .grid-select-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 10px;
+                            border: 1px solid rgb(253, 78, 14, 0.8);
+                            border-radius: 5px;
+                        }
+                        
+                        .grid-select-box i {
+                            font-size: 20px;
+                            margin-bottom: 3px;
+                        }
+                        
+                        .grid-select-item {
+                            border: 1px solid rgb(253, 78, 14, 0.8);
+                            max-height: 220px;
+                            overflow-y: scroll;
+                            position: absolute;
+                            top: 110%;
+                            background-color: whitesmoke;
+                            padding: 10px;
+                            width: 100%;
+                            z-index: 10;
+                            font-size: 14px;
+                            border-radius: 5px;
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                        
+                        .grid-select-item ul a {
+                            color: black;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                            display: block;
+                            padding: 10px 0 5px;
+                        }
+                        
+                        .grid-select:hover .grid-select-item {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        /* ---------------------- */
+                        
+                        .grid-nav a {
+                            display: block;
+                            padding: 8px 0 5px;
+                            margin-bottom: 10px;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                        }
+                        
+                        .grid-nav a li {
+                            color: black;
+                            font-size: 15px;
+                        }
+                        
+                        .grid-nav a:hover li {
+                            color: orangered;
+                            transform: translateX(10px);
+                        }
+                        /* SUPER GRID RIGHT */
+                        
+                        .heading .heading-flex {
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: 13px;
+                            text-transform: capitalize;
+                        }
+                        
+                        .heading .heading-flex p {}
+                        
+                        .super-grid-right .fs {
+                            font-size: 25px;
+                        }
+                        
+                        .grid-right-container {
+                            display: flex;
+                            padding: 20px 0;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                            gap: 15px;
+                        }
+                        
+                        .img-box {
+                            position: relative;
+                            min-height: 230px;
+                            max-width: 330px;
+                            min-width: 330px;
+                            overflow: hidden;
+                        }
+                        
+                        .apple {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            color: white;
+                            background-color: orangered;
+                            padding: 5px;
+                            font-size: 12px;
+                            border-radius: 0px 5px 0 0;
+                        }
+                        
+                        .grid-right-container:hover img {
+                            transform: scale(1.1);
+                        }
+                        
+                        .grid-content h5 {
+                            color: black;
+                        }
+                        
+                        .grid-content h3 {
+                            font-weight: 300;
+                            font-size: 22px;
+                            margin: 10px 0;
+                        }
+                        
+                        .grid-content:hover h3 {
+                            color: orangered;
+                            cursor: pointer;
+                        }
+                        
+                        .grid-content .owner {
+                            font-weight: 600;
+                            margin: 10px 0;
+                        }
+                        
+                        .flex-btn {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 20px;
+                        }
+                        
+                        .btn {
+                            display: inline-block;
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: rgb(255, 155, 119);
+                            border-radius: 5px;
+                        }
+                        
+                        .btn:hover {
+                            color: orangered;
+                        }
+                        
+                        .comment i {
+                            margin-right: 8px;
+                            color: orangered;
+                        }
+                        /* slide */
+                        
+                        .slide {
+                            /* background-color: coral; */
+                            height: 100px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .slide-box {
+                            border: 1px solid rgb(196, 194, 194);
+                            border-radius: 5px;
+                            margin: 0px;
+                            /* padding:10px 5px; */
+                        }
+                        
+                        .slide-box a {
+                            float: left;
+                            padding: 5px 10px;
+                            color: rgb(0, 0, 0);
+                        }
+                        
+                        .slide-box a.active {
+                            background-color: orangered;
+                            color: white;
+                        }
+                        
+                        .slide-box a:hover {
+                            background-color: orangered;
+                            color: white;
+                        }
+                        
+                        .next {
+                            background-color: orangered;
+                            color: white !important;
+                        }

@@ -1,0 +1,526 @@
+:root {
+    --gray: rgb(70, 69, 69);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #ebe9e9;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+p {
+    color: var(--gray);
+    font-size: 15px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+i {
+    cursor: pointer;
+}
+
+
+/* --TOP WEB */
+
+.topweb {
+    background-color: black;
+    padding: 7px;
+}
+
+.topweb .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.topweb .wrapper .top-web-left a {
+    color: white;
+    margin-right: 12px;
+}
+
+.topweb .wrapper .top-web-right a i {
+    color: white;
+    margin-left: 12px;
+}
+
+
+/*----------- NAVIGATION BAR-------------- */
+
+header {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+#bars,
+#times {
+    display: none;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .wrapper .logo {
+    font-size: 25px;
+    color: black;
+    font-weight: 800;
+}
+
+header .wrapper .logo i {
+    color: orangered;
+}
+
+header .wrapper .navbar {
+    display: inline-flex;
+}
+
+header .wrapper .navbar li a {
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+.logo-991 {
+    display: none;
+}
+
+header .wrapper .navbar li a:hover,
+.topweb .wrapper a:hover,
+.topweb .wrapper a i:hover {
+    color: orangered;
+    transition: all 0.1s;
+}
+
+header .search {
+    position: absolute;
+    right: 0;
+    background-color: #eeecec;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+header .search i:hover {
+    color: orangered;
+}
+
+
+/* STICK NAVBAR */
+
+header.sticky {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* GRID CONTAINER */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.grid-color {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*  Grid 1 form*/
+
+.grid-1-form {
+    margin-top: 20px;
+    background-color: white;
+}
+
+.grid-1-form iframe {
+    width: 100%;
+    max-height: 170px;
+    margin-bottom: 20px;
+}
+
+.input-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.inputBx {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputBx input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.inputBx input:focus,
+textarea:focus {
+    border: 1px solid orangered;
+}
+
+textarea {
+    width: 100%;
+    max-height: 150px;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.input-button input {
+    padding: 7px 25px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: orange;
+    border: 1px solid orange;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-button input:hover {
+    background-color: orangered;
+    border: 1px solid orangered;
+    cursor: pointer;
+}
+
+
+/* Social */
+
+.grid-box-1 .social .social-box {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-right: 2px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.grid-box-1 .social .social-box i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+
+.grid-box-1 .social .social-box span {
+    padding: 10px 15px;
+}
+
+.s-1 {
+    background-color: #3b5999;
+}
+
+.s-2 {
+    background-color: #00acee;
+}
+
+.f-1 {
+    background-color: #254c94;
+}
+
+.f-2 {
+    background-color: #22befc;
+}
+
+.f-3 {
+    background-color: #3fbb50;
+}
+
+.f-4 {
+    background-color: #ca2127;
+}
+
+.f-5 {
+    background-color: gray;
+}
+
+.f-6 {
+    background-color: rgb(226, 226, 225);
+    color: gray !important;
+}
+
+
+/* ใช้ร่วมกันหลายกล่อง */
+
+.heading h4 {
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.heading .line {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(217, 30, 30, 0.1);
+    position: relative;
+}
+
+.heading .line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8%;
+    height: 3px;
+    background-color: orangered;
+}
+
+
+/* GRID-BOX-5 */
+
+.grid-5-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-5-row .social-box {
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-right: 2px;
+}
+
+.grid-5-row .social-box i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+
+.grid-5-row .social-box span {
+    padding: 10px 10px;
+}
+
+.o-1 {
+    background-color: rgba(243, 229, 229, 0.2);
+}
+
+.s-3 {
+    background-color: red;
+}
+
+.s-4 {
+    background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
+}
+
+
+/* GRID-BOX-6 */
+
+.grid-6-img {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.grid-6-img-content {
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+}
+
+.grid-6-img-content .apple {
+    background-color: orangered;
+    display: inline-block;
+    font-size: 10px;
+    color: white;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.grid-6-img-content h4 {
+    color: white;
+    margin: 10px 0;
+}
+
+.grid-6-img-content h5 {
+    color: rgb(173, 169, 169);
+}
+
+
+/* grid-6-item */
+
+.grid-6-item {
+    display: flex;
+    margin: 30px 0;
+}
+
+.grid-6-item-img {
+    width: 200px;
+    height: 70px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.grid-6-item-content h5 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.grid-6-item-content h5:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.grid-6-item-content h6 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 200px;
+}
+
+.grid-6-img:hover img,
+.grid-6-item:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media (max-width:991px) {
+    .topweb {
+        display: none;
+    }
+    #bars {
+        display: block;
+        font-size: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .bars:hover,
+    .times:hover {
+        color: orangered;
+        cursor: pointer;
+    }
+    header .navbar {
+        position: absolute;
+        width: 280px;
+        height: 150vh;
+        top: -15px;
+        left: -15px;
+        display: block;
+        background-color: rgb(255, 254, 254);
+        z-index: 1000;
+        box-shadow: 1px 2px 5px 5px rgba(68, 68, 68, 0.1);
+        opacity: 1;
+        /* visibility: hidden; */
+    }
+    header .wrapper .navbar {
+        display: block;
+    }
+    header .wrapper .navbar li {
+        margin-top: 25px;
+    }
+    .logo-991 {
+        display: block;
+        border-bottom: 1px solid #cccccc;
+        padding: 17px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        font-size: 23px;
+        color: black;
+        font-weight: 800;
+    }
+    .logo-991 i {
+        color: orangered;
+        margin: 0 10px;
+    }
+    #times {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 18px;
+        font-size: 22px;
+        font-weight: 100;
+        cursor: pointer;
+    }
+}
+
+
+/* Max Width 680px */
+
+@media(max-width:680px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+    /* ------ */
+    .grid-box-3-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Max width 480px */
+
+@media(max-width:480px) {
+    nav .wrapper .logo {
+        font-size: 20px;
+    }
+    .grid-box-1 h1 {
+        font-size: 25px;
+    }
+    .grid-box-1 .icon-box-1 {
+        display: none;
+    }
+    .grid-box-1 .mini-content {
+        margin: 30px 0px 30px 10px;
+    }
+    /* grid box 3 */
+    .grid-box-3-row {
+        grid-template-columns: 1fr;
+    }
+    /* GRID BOX 5 */
+    .grid-5-row {
+        grid-template-columns: 1fr;
+    }
+    /* Grid box 7 */
+    .grid-7-row {
+        grid-template-columns: 1fr;
+    }
+    nav .wrapper .logo {
+        font-size: 20px;
+    }
+}
